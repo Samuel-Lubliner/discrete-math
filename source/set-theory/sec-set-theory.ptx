@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<section xml:id="set-theory" xmlns:xi="http://www.w3.org/2001/XInclude">
+  <title>Set Theory</title>
+
+  <p>
+    To learn more about sets with SageMath visit the [documentation](https://doc.sagemath.org/html/en/reference/sets/index.html).
+  </p>
+
+  <subsection xml:id="subsec-create-a-set">
+    <title>Create a Set</title>
+    <p>
+      Create a variable. Do not use reserved word or white space for a variable name. After the variable, we use an equal sign to assign (store) value. Define a set by listing the contents separated by commas in between a pair of curly braces.
+    </p>
+
+    <sage>
+      <input>
+        # Create and assign value to the sets A and B
+        A = {1, 2, 3}
+        B = {2, 3, 4, 5, 6}
+        
+        # Print sets with messages
+        print("Set A:", A)
+        print("Set B:", B)
+      </input>
+      <output></output>
+    </sage>
+
+  </subsection>
+
+  <subsection xml:id="subsec-Intersection">
+    <title>Intersection</title>
+    <p>
+      There are two different ways we can ask sage to calculate the intersection. One advantage of the <c>intersection()</c> method is that it can take an arbitrary number of sets as arguments. This means you can find the intersection of more than two sets in a single call.
+    </p>
+  
+    <sage>
+      <input>
+        # Using the intersection() method:
+        A.intersection(B)
+      </input>
+      <output></output>
+    </sage>
+  
+    <p>
+      The <c>&amp;</c> operator only works for two sets at a time. To find the intersection of more than two sets, you would have to use the operator repeatedly.
+    </p>
+    
+    <sage>
+      <input>
+        # Using the &amp; operator
+        A &amp; B
+      </input>
+      <output></output>
+    </sage>
+  </subsection>
+
+  <subsection xml:id="subsec-Union">
+    <title>Union</title>
+    <p>
+      Find the union of A and B
+    </p>
+  
+    <sage>
+      <input>
+        # Using the union() method
+        A.union(B)
+      </input>
+      <output></output>
+    </sage>
+  
+    <sage>
+      <input>
+        # Using the pipe operator
+        A | B
+      </input>
+      <output></output>
+    </sage>
+  </subsection>
+
+  <subsection xml:id="subsec-Difference">
+    <title>Difference</title>
+    <p>
+      Calculate the difference of A and B
+    </p>
+    <sage>
+      <input>
+        A.difference(B)
+      </input>
+      <output></output>
+    </sage>
+  </subsection>
+
+  <subsection xml:id="subsec-Ways-to-create-a-set">
+    <title>Ways to Create a Set</title>
+    <p>There are two ways we can define a set.</p>
+    
+    <ul>
+      <li>
+        <p><term>Curly Brackets - Sets:</term><c>{}</c></p>
+        <p><term>Definition:</term> Curly brackets are used to define a mathematical set.</p>
+        <p><term>Characteristics:</term></p>
+        <ul>
+          <li>Unordered: The elements in a set do not have a specific order.</li>
+          <li>Unique Elements: Sets cannot have duplicate elements. If you try to add a duplicate element to a set, it will be ignored.</li>
+          <li>Mathematical Set Operations: Sets support operations like union, intersection, difference, etc.</li>
+        </ul>
+        <p><term>Use-Case Example:</term> Sets are ideal when you need to maintain a collection of unique items and are interested in performing set operations. For instance, when dealing with distinct mathematical objects like prime numbers, graph vertices, or unique solutions to an equation.</p>
+      </li>
+  
+      <li>
+        <p><term>Square Brackets - Lists:</term><c>[]</c></p>
+        <p><term>Definition:</term> Square brackets are used to define a list.</p>
+        <p><term>Characteristics:</term></p>
+        <ul>
+          <li>Ordered: The elements in a list maintain a specific order.</li>
+          <li>Duplicates Allowed: Lists can have duplicate elements.</li>
+          <li>Indexing and Slicing: You can access elements by their position and slice parts of the list.</li>
+        </ul>
+        <p><term>Use-Case Example:</term> Lists are suitable for ordered collections of items where duplicates are allowed or required, and when you need to perform operations like iteration in a specific order, indexing, slicing, etc.</p>
+      </li>
+    </ul>
+  </subsection>
+
+  <subsection xml:id="subsec-Cardinality">
+    <title>Cardinality</title>
+    <sage>
+      <input>
+        # Create a list named C
+        C = [0, -1, 5, 8]
+        # defines a list named 'C' with four elements
+
+        # Convert the list C to a set T
+        D = Set(C)
+        # Here, the list 'C' is converted into a set named 'T'. The Set function takes the elements in 'C', removes any duplicates (if there were any), and creates an unordered collection of unique elements.
+
+        # Calculate the cardinality of set D
+        D.cardinality()
+        # calculates the cardinality (the number of elements) of the set 'D' using the .cardinality() method.
+      </input>
+      <output></output>
+    </sage>
+  </subsection>
+
+  <subsection xml:id="subsec-Cartesian-product">
+    <title>Cartesian Product</title>
+    <sage>
+      <input>
+        # Define the sets
+        E = [1, 2, 3]
+        F = [2, 3, 4, 5, 6]
+
+        # Compute the Cartesian product
+        G = cartesian_product([E, F])
+
+        # Display the result
+        print(G)
+        
+      </input>
+      <output></output>
+    </sage>
+    
+  </subsection>
+
+  <subsection xml:id="subsec-subsets">
+    <title>Subsets</title>
+    <sage>
+      <input>
+        #  Create a new object H which represents the set of all possible subsets of the set {1, 2, 3}
+        H = Subsets([1, 2, 3])
+
+        # Convert the object H into a SageMath Set and print the contents
+        Set(H)
+      </input>
+      <output></output>
+    </sage>
+
+  </subsection>
+</section>

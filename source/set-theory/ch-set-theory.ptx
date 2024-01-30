@@ -4,10 +4,10 @@
   <title>Set Theory</title>
 
   <introduction>
-    <p> Text before the first section. </p>
+    <p> Set theory introduction paragraph here </p>
   </introduction>
 
   <!-- include sections -->
-  <xi:include href="sec-sage-cell.ptx" />
+  <xi:include href="sec-set-theory.ptx" />
 
 </chapter>
