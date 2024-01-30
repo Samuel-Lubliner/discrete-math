@@ -4,7 +4,7 @@
   <title>Set Theory</title>
 
   <p>
-    To learn more about sets with SageMath visit the [documentation](https://doc.sagemath.org/html/en/reference/sets/index.html).
+    To learn more about sets with SageMath visit the <url href="https://doc.sagemath.org/html/en/reference/sets/index.html" target="_blank">documentation</url>
   </p>
 
   <subsection xml:id="subsec-create-a-set">
