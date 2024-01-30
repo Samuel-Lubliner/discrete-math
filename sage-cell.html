@@ -130,7 +130,7 @@ sagecell.makeSagecell({
 <div id="searchempty" class="searchempty"><span>No results.</span></div>
 <ol id="searchresults" class="searchresults"></ol>
 </div>
-</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-chapter-title.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-chapter-title.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="sec-section-name.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
+</div></header><nav id="ptx-navbar" class="ptx-navbar navbar"><button class="toc-toggle button" title="Contents"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5d2;</span><span class="name">Contents</span></button><span class="nav-other-controls"></span><span class="treebuttons"><a class="previous-button button" href="ch-set-theory.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="up-button button" href="ch-set-theory.html" title="Up"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Up</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a></span><div class="searchbox"><div class="searchwidget">
 <input id="ptxsearch" class="ptxsearch" type="text" name="terms" placeholder="Search" onchange="doSearch()"><button id="searchbutton" class="searchbutton" type="button" onclick="doSearch()" title="Search book"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe8b6;</span><span class="name">Search Book</span></button>
 </div></div>
 <span class="nav-runestone-controls"><button id="user-preferences-button" class="user-preferences-button button" title="Modify user preferences"><span id="avatarbutton" class="avatarbutton name">You!</span><div id="preferences_menu_holder" class="preferences_menu_holder hidden"><ol id="preferences_menu" class="preferences_menu" style="font-family: 'Roboto Serif', serif;">
@@ -246,18 +246,30 @@ sagecell.makeSagecell({
 <div id="ptx-sidebar" class="ptx-sidebar"><nav id="ptx-toc" class="ptx-toc depth2"><ul class="structural">
 <li><div class="toc-item"><a href="frontmatter.html" class="internal"><span class="title">Front Matter</span></a></div></li>
 <li>
-<div class="toc-item"><a href="ch-chapter-title.html" class="internal"><span class="codenumber">1</span> <span class="title">Chapter Title</span></a></div>
+<div class="toc-item"><a href="ch-getting-started.html" class="internal"><span class="codenumber">1</span> <span class="title">Getting Started</span></a></div>
 <ul class="structural">
-<li class="active"><div class="toc-item"><a href="sage-cell.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Sage Cell</span></a></div></li>
-<li><div class="toc-item"><a href="sec-section-name.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Section Title</span></a></div></li>
+<li><div class="toc-item"><a href="intro-sage.html" class="internal"><span class="codenumber">1.1</span> <span class="title">Getting Started with SageMath</span></a></div></li>
+<li>
+<div class="toc-item"><a href="intro-python.html" class="internal"><span class="codenumber">1.2</span> <span class="title">Introduction to Python Programming</span></a></div>
+<ul class="structural">
+<li><div class="toc-item"><a href="intro-python.html#python-basic-data-types" class="internal"><span class="codenumber">1.2.1</span> <span class="title">Basic Data Types in Python</span></a></div></li>
+<li><div class="toc-item"><a href="intro-python.html#sagemath-data-types" class="internal"><span class="codenumber">1.2.2</span> <span class="title">Data Types in SageMath</span></a></div></li>
+<li><div class="toc-item"><a href="intro-python.html#creating-variables" class="internal"><span class="codenumber">1.2.3</span> <span class="title">Creating Variables and Assigning Values</span></a></div></li>
+<li><div class="toc-item"><a href="intro-python.html#reserved-words" class="internal"><span class="codenumber">1.2.4</span> <span class="title">Reserved Words in Python and SageMath</span></a></div></li>
 </ul>
+</li>
+</ul>
+</li>
+<li>
+<div class="toc-item"><a href="ch-set-theory.html" class="internal"><span class="codenumber">2</span> <span class="title">Set Theory</span></a></div>
+<ul class="structural"><li class="active"><div class="toc-item"><a href="sage-cell.html" class="internal"><span class="codenumber">2.1</span> <span class="title">Sage Cell</span></a></div></li></ul>
 </li>
 <li><div class="toc-item"><a href="backmatter.html" class="internal"><span class="title">Backmatter</span></a></div></li>
 </ul></nav></div>
 <main class="ptx-main"><div id="ptx-content" class="ptx-content"><section class="section" id="sage-cell"><h2 class="heading hide-type">
-<span class="type">Section</span><span class="space"> </span><span class="codenumber">1.1</span><span class="space"> </span><span class="title">Sage Cell</span>
+<span class="type">Section</span><span class="space"> </span><span class="codenumber">2.1</span><span class="space"> </span><span class="title">Sage Cell</span>
 </h2>
-<div class="para" id="p-2">This is a sage cell. Run some sage code!</div>
+<div class="para" id="p-17">This is a sage cell. Run some sage code!</div>
 <pre class="ptx-sagecell sagecell-sage" id="sage-1"><script type="text/x-sage"># Creating sets
 A = Set([1, 2, 3])
 B = Set([3, 4, 5])
@@ -288,7 +300,7 @@ print("Is A a superset of C?", A.issuperset(C))
 print("Number of elements in Set A:", A.cardinality())
 </script></pre></section></div>
 <div class="ptx-content-footer">
-<a class="previous-button button" href="ch-chapter-title.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="sec-section-name.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
+<a class="previous-button button" href="ch-set-theory.html" title="Previous"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cb;</span><span class="name">Prev</span></a><a class="top-button button" href="#" title="Top"><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5ce;</span><span class="name">Top</span></a><a class="next-button button" href="backmatter.html" title="Next"><span class="name">Next</span><span class="icon material-symbols-outlined" aria-hidden="true">&#xe5cc;</span></a>
 </div></main>
 </div>
 <div id="ptx-page-footer" class="ptx-page-footer">
