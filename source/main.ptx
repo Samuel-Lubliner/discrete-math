@@ -5,7 +5,7 @@
   <xi:include href="./docinfo.ptx" />
 
   <book xml:id="my-great-book">
-    <title>Descrete Math</title>
+    <title>Discrete Math</title>
     <subtitle>With SageMath</subtitle>
 
     <!-- Include frontmatter -->
